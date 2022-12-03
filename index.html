@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad38ba16ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Blockchain</title>
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+
+            <!-- Yatay Menü -->
+
+            <nav class="nav-horizontal">
+                <ul>
+                    <li><a id="all-link" href="#">All</a></li>
+                    <li><a href="#">USDT</a></li>
+                    <li><a href="#">BUSD</a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                </ul>
+            </nav>
+
+            <!-- Yatay Menü -->
+
+            <!-- Arama Alanı -->
+
+            <form id="search-area" action="/">
+                <button id="search" type="submit"><i class="fa fa-search"></i></button>
+                <input id="search-filter" type="text" onkeyup="filterCurrency()" placeholder="Search">
+            </form>
+
+            <!-- Arama Alanı -->
+
+            <!-- Dikey Menü -->
+
+            <section class="nav-vertical">
+                <ul id="filterable-list">
+                    <li><img src="/images/bitcoin.png" alt=""><a href="#">BTC</a><i class="fa-regular fa-heart" id="add-favorite"></i></li>
+                    <li><img src="/images/etherium.png" alt=""><a href="#">ETH</a><i class="fa-regular fa-heart" id="add-favorite"></i></li>
+                    <li><img src="/images/luna.png" alt=""><a href="#">LUNA</a><i class="fa-regular fa-heart" id="add-favorite"></i></li>
+                    <li><img src="/images/doge.png" alt=""><a href="#">DOGE</a><i class="fa-regular fa-heart" id="add-favorite"></i></li>
+                    <li><img src="/images/algo.png" alt=""><a href="#">ALGO</a><i class="fa-regular fa-heart" id="add-favorite"></i></li>
+                    <li><img src="/images/ada.png" alt=""><a href="#">ADA</a><i class="fa-regular fa-heart" id="add-favorite"></i></li>
+                </ul>
+            </section>
+
+            <!-- Dikey Menü -->
+
+        </div>
+    </section>
+    
+    <script src="/main.js"></script>
+</body>
+</html>

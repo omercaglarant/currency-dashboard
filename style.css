@@ -1,0 +1,124 @@
+*, 
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.main {
+    width: 420px;
+    height: auto;
+    border-radius: 24px;
+    margin: 10vh auto;
+    background-color: #FFFFFF;
+    box-shadow: -15px 10px 15px 1px rgb(165, 165, 165);
+}
+.container {
+    padding: 48px 32px 40px 32px;
+}
+
+/* Yatay Menü */
+
+.nav-horizontal {
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.nav-horizontal ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nav-horizontal ul li {
+    padding: 10px 30px;
+    border-right: 1px solid #DDE1F4;
+}
+.nav-horizontal ul li:first-child {
+    background-color: #4A6FFF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.nav-horizontal ul li:last-child {
+    border-right: none;
+}
+#all-link {
+    color: #fff;
+}
+
+/* Yatay Menü */
+
+/* Arama Alanı */
+#search-area {
+   display: flex;
+   width: 100%;
+   padding: 16px;
+   border-radius: 5px;
+   background-color: #F2F5FF;
+   border: 1px solid #DDE1F4;
+   outline: 0;
+   margin-bottom: 35px;
+}
+
+#search {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 25px;
+}
+#search-filter {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+}
+.search-box {
+    border: none;
+    color: blue;
+    height: 30px;
+    outline: 0;
+
+}
+
+
+/* Arama Alanı */
+
+/* Dikey Menü */
+#filterable-list {
+    display: flex;
+    flex-direction: column;
+}
+#filterable-list img {
+    margin-right: 10px;
+}
+#filterable-list a {
+    margin-left: -220px;
+    cursor: default;
+}
+#filterable-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; 
+    border-radius: 5px;
+}
+#filterable-list li:hover {
+    background-color: #f2f2f2;
+}
+#add-favorite {
+    cursor: pointer;
+}
